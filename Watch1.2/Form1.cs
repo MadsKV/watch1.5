@@ -185,6 +185,11 @@ namespace Watch1._2
         {
             isActive = true;
         }
+        private void LapBtn_Click(object sender, EventArgs e)
+        {
+            LapBox.Items.Add(timeH + ":" + timeM + ":" + timeS + ":" + timeMi);
+
+        }
         //Stopurets stopknap
         private void StopBtn_Click(object sender, EventArgs e)
         {
@@ -293,6 +298,49 @@ namespace Watch1._2
         private void TimerStop_Click(object sender, EventArgs e)
         {
             StopTimer();
+        }
+
+        private void WatchM_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LapBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnAlarm_Click(object sender, EventArgs e)
+        {
+            AlarmBox.Items.Add(CounterH + ":" + CounterM + ":" + CounterS + ":" + CounterMS);
+        }
+
+        private void BtnAlarms_Click(object sender, EventArgs e)
+        {
+            Form2 win2 = new Form2();
+            win2.Show();
+            Form1 win1 = new Form1();
+            win1.Close();
+        }
+
+        private void AlarmBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void ClearLap_Click(object sender, EventArgs e)
+        {
+            LapBox.Items.Clear();
+        }
+
+        private void ClearAlarm_Click(object sender, EventArgs e)
+        {
+            AlarmBox.Items.Clear();
+        }
+
+        private void WatchH_Click(object sender, EventArgs e)
+        {
+
         }
 
         //Counteren/Nedtællerens resetknap
